@@ -518,13 +518,26 @@ h1, h2, h3, h4, h5, h6, .brand, .huge-title {
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .hero-grid, .split-grid {
+    .hero {
+        flex-direction: column;
+        padding-top: 0;
+        min-height: auto;
+    }
+    
+    .hero-grid-new, .split-grid {
         grid-template-columns: 1fr;
     }
 
-    .hero-visuals {
-        height: 500px;
+    .hero-image-absolute {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        min-height: 400px;
         order: -1;
+    }
+    
+    .hero-content {
+        padding: 4rem 0;
     }
 
     .sales-grid, .feedback-grid, .social-grid {
@@ -541,7 +554,21 @@ h1, h2, h3, h4, h5, h6, .brand, .huge-title {
         grid-template-columns: 1fr;
     }
 
-    .hero-visuals {
-        height: 400px;
+    .hero-image-absolute {
+        height: 50vh;
+    }
+    
+    .social-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .headline {
+        font-size: clamp(3rem, 12vw, 4rem);
+    }
+    
+    .btn-massive {
+        width: 100%;
+        padding: 1.5rem 1rem;
+        font-size: 1.1rem;
     }
 }
