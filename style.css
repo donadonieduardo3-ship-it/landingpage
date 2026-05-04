@@ -486,6 +486,107 @@ h1, h2, h3, h4, h5, h6, .brand, .huge-title {
     font-size: 0.875rem;
 }
 
+/* Novos Componentes de Copy */
+.hero-bullets {
+    list-style: none;
+    margin-bottom: 2.5rem;
+}
+
+.hero-bullets li {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.dor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.dor-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 16px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.check-list {
+    list-style: none;
+}
+
+.check-list li {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 500;
+}
+
+.check-list li:last-child {
+    border-bottom: none;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.faq-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.faq-item h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.faq-item p {
+    font-size: 1.125rem;
+}
+
+.steps-list {
+    list-style: none;
+}
+
+.steps-list li {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+.step-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.clean-list {
+    list-style: none;
+    font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.clean-list li {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
 /* Animations */
 .reveal-up {
     opacity: 0;
@@ -564,7 +665,7 @@ h1, h2, h3, h4, h5, h6, .brand, .huge-title {
         padding: 4rem 0;
     }
 
-    .sales-grid, .feedback-grid, .social-grid {
+    .sales-grid, .feedback-grid, .social-grid, .dor-grid {
         grid-template-columns: 1fr;
     }
 
